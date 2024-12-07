@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { centres , villes ,cartiers} from './data';
 import './App.css';
 function Rech(props){
-  return (<><h1 className='text-center' style={{color:"purple"}} >chercher par nom du centre</h1><div className='rech'>
+  return (<><h1 className='text-center' style={{color:"purple"}} >Chercher par nom du centre</h1><div className='rech'>
     <div  className="input-group mb-2" style={{width:"40%"}}>
         <div className="input-group-prepend">
           <div className="input-group-text"  style={{borderRadius:"0",paddingBottom:"13px"}} ><i style={{marginTop:"5px"}}  className='fas fa-search'></i></div>
