@@ -65,7 +65,7 @@ const Card = (props) => {
       type: "spring",
       stiffness: 100,  // Controls the rigidity of the spring
       damping: 20,     // Controls the "bounciness"
-    }} className="card" style={{ width: '30%' }}>
+    }} className="card" style={{ width: '50%' }}>
       <img
         className="card-img-top"
         src= {props.centre.image}
@@ -150,7 +150,7 @@ function El(props){
     }}
   style={{border:"1px gray solid",margin:"10px", borderRadius:"20px 20px 0 0",paddingBottom:"10px"}}>
  
-    <img style={{width:"90%",margin:"0 auto",borderRadius:"0 0 20px 20px"}}  
+    <img style={{width:"100%",margin:"0 auto",borderRadius:" 20px 20px 0 0"}}  
     src={props.centre.image}
     />
     <h1 className='text-center' style={{color:"purple"}}>{props.centre.titre}</h1>
