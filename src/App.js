@@ -76,7 +76,7 @@ const Card = (props) => {
         <p className="card-text">
          {props.centre.description}
         </p>
-        <center> <a onClick={()=>props.voire(props.centre.id)} style={{cursor:"pointer"}} className="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 ">voire</a></center>
+        <center> <a onClick={()=>props.voire(props.centre.id)} style={{cursor:"pointer"}} className="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 " href='#section'>voire</a></center>
        
           
         
@@ -99,7 +99,7 @@ const Table = (props) => {
         </tr>
         <tr>
         <td>localisation</td>
-        <td><a herf={props.centre.localisation} about='blank' style={{cursor:"pointer"}}  className="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3" >visiter</a></td>
+        <td><a href={props.centre.localisation}   className="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3" >visiter</a></td>
         </tr>
         <tr>
         <td>niveaux</td>
@@ -131,7 +131,7 @@ function Nav(props){
               <a   className={props.mode === "langues" ? "nav-item nav-link active" : "nav-item nav-link"}  onClick={()=>props.setMode("langues")} style={{cursor:"pointer"}}>centres des  langues</a>
             
             </div>
-            <a style={{cursor:"pointer"}}  className="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">commencer la recherche</a>
+            <a style={{cursor:"pointer"}}  href='https://www.instagram.com/soufianeasmar6/profilecard/?igsh=MXZkZGgzY3VqOWJ6NA==' className="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">contacter nous</a>
           </div>
         </nav>
   </>)
@@ -164,17 +164,21 @@ function El(props){
 }
 function Section(){
   return (<>
- <div className="container-xxl position-relative p-0" id="home">
+ <div className="container-xxl position-relative p-0" id="section">
         
 
         <div className="container-xxl bg-primary hero-header">
           <div className="container px-lg-5">
             <div className="row g-5">
               <div className="col-lg-8 text-center text-lg-start">
-                <h1 className="text-white mb-4 animated slideInDown">The Revolutionary App That Helps To Control Your Own Fitness</h1>
-                <p className="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
+                <h1 className="text-white mb-4 animated slideInDown">votre guide des centres</h1>
+                <p className="text-white pb-3 animated slideInDown">Maintenant, tu peux filtrer les centres par ville et quartier et avoir toutes les informations sur le centre.
+<br></br>
+                  <b>Développé par Lasmar Soufiane</b>
+                </p>
                 
-                <a href="#" className="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contacter nous</a>
+                <a style={{cursor:"pointer"}}  href='https://www.instagram.com/soufianeasmar6/profilecard/?igsh=MXZkZGgzY3VqOWJ6NA==' className="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 ">contacter nous</a>
+                <br></br><br></br><br></br><br></br>
               </div>
               <div className="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
                 <div className="owl-carousel screenshot-carousel">

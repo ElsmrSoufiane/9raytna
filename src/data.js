@@ -4,7 +4,7 @@ const centres = [
         titre: "istia adarissa",
         type: "scolaire",
         ville: "fes",
-        cartier: "adarissa",contact:"0677072608",localisation:"",
+        cartier: "adarissa",contact:"0677072608",localisation:"https://maps.app.goo.gl/gHMknvNfJHXoDjJCA",
         niveaux: [
             { id:1,
                 nom: "dev",
