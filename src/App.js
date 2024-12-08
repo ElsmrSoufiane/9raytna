@@ -18,13 +18,13 @@ function Rech(props){
 }
 function Filter(props){
   
-  return (<><h1 className='text-center' style={{color:"purple"}} >filtrer par ville ou cartier</h1>
+  return (<><h1 className='text-center' style={{color:"purple"}} >filtrer par ville ou quartier</h1>
   <div className='rech'>
     <h3 className='text-light'>ville:</h3>
   <select className='select form-control' style={{width:"20%"}} onClick={(e)=>props.handleV(e.target.value)} onChange={(e)=>props.handleV(e.target.value)} >{villes.map((e,i)=>{
     return <option value={e.nom} key={i} >{e.nom}</option>
   })} </select>
-   <h3 className='text-light'>cartier:</h3>
+   <h3 className='text-light'>quartier:</h3>
   <select className='select form-control' style={{width:"20%"}} onClick={(e)=>props.handleC(e.target.value)} onChange={(e)=>props.handleC(e.target.value)} >{cartiers.filter(e=>{
     return e.ville==props.ville
   }).map((e,i)=>{
