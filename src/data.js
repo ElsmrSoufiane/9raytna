@@ -10,15 +10,15 @@ const centres = [
                 nom: "dev",
                 groups: [
                     { 
-                        emploi: "dev1 1.png",
+                        emploi: "img/dev1 1.png",
                         nom: "dev1"
                     },
                     { 
-                        emploi: "dev1 2.png",
+                        emploi: "img/dev1 2.png",
                         nom: "dev2"
                     },
                     { 
-                        emploi: "dev1 3.png",
+                        emploi: "img/dev1 3.png",
                         nom: "dev3"
                     }
                 ]
@@ -27,15 +27,15 @@ const centres = [
                 nom: "devwfs",
                 groups: [
                     { 
-                        emploi: "dev2 1.png",
+                        emploi: "img/dev2 1.png",
                         nom: "devwfs1"
                     },
                     { 
-                        emploi: "dev2 2.png",
+                        emploi: "img/dev2 2.png",
                         nom: "devwfs2"
                     },
                     { 
-                        emploi: "dev2 3.png",
+                        emploi: "img/dev2 3.png",
                         nom: "devwfs3"
                     }
                 ]
