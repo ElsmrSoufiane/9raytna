@@ -5,6 +5,7 @@ const centres = [
         type: "scolaire",
         ville: "fes",
         cartier: "adarissa",contact:"0677072608",localisation:"https://maps.app.goo.gl/gHMknvNfJHXoDjJCA",
+        professeur:["soufiane","sayf"],
         niveaux: [
             { id:1,
                 nom: "dev",

@@ -4,8 +4,50 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { centres , villes ,cartiers} from './data';
 import './App.css';
+function ChercheP({ l, setL2, initial }) {
+  const handleSearch = (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    setL2(
+      l.filter((centre) =>
+        centre.professeur.some((prof) => prof.toLowerCase().includes(searchTerm))
+      )
+    );
+  };
+
+  return (
+    <>
+      <h1 className="text-center" style={{ color: "purple" }}>Chercher par Professeur</h1>
+      <div className="rech">
+        <div className="input-group mb-2" style={{ width: "40%" }}>
+          <div className="input-group-prepend">
+            <div
+              className="input-group-text"
+              style={{ borderRadius: "0", paddingBottom: "13px" }}
+            >
+              <i style={{ marginTop: "5px" }} className="fas fa-search"></i>
+            </div>
+          </div>
+          <input
+            className="form-control"
+            type="text"
+            placeholder="Nom du professeur"
+            onChange={handleSearch}
+          />
+        </div>
+        <button
+          style={{ cursor: "pointer" }}
+          className="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3"
+          onClick={initial}
+        >
+          Initialiser
+        </button>
+      </div>
+    </>
+  );
+}
 function Rech(props){
-  return (<><h1 className='text-center' style={{color:"purple"}} >Chercher par nom du centre</h1><div className='rech'>
+  return (<>
+  <h1 className='text-center' style={{color:"purple"}} >Chercher par nom du centre</h1><div className='rech'>
     <div  className="input-group mb-2" style={{width:"40%"}}>
         <div className="input-group-prepend">
           <div className="input-group-text"  style={{borderRadius:"0",paddingBottom:"13px"}} ><i style={{marginTop:"5px"}}  className='fas fa-search'></i></div>
@@ -105,6 +147,10 @@ const Table = (props) => {
         <td>niveaux</td>
         <td>{props.centre.niveaux.map(e=>{
           return e.nom+" /";
+        })}</td></tr>
+         <tr><td>professeurs</td>
+        <td>{props.centre.professeur.map(e=>{
+          return e+" /";
         })}</td>
         </tr>
         <tr>
@@ -305,7 +351,9 @@ setL2(l.filter(e=>{
       {console.log(l2)}
       <Nav setMode={setMode} mode={mode} />
        <Section />
+
       { id ? <El centre={l.find(e=>{ return e.id==id })} mode={mode} />:""}
+      <ChercheP l={l} setL2={setL2} initial={initial} /> 
       <Rech change={Change} initial={initial} />
       <Filter initial={initial} handleV={handleV} handleC={handleC}  ville={ville} />
      <div style={{display:'flex',justifyContent:"space-evenly",width:"100%"}}>
