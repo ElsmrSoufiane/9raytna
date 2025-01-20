@@ -11,15 +11,15 @@ const centres = [
                 nom: "dev",
                 groups: [
                     { 
-                        emploi: "img/dev1 1.png",
+                        emploi: "https://i.ibb.co/rfSQJH1/dev1-1.png",
                         nom: "dev1"
                     },
                     { 
-                        emploi: "img/dev1 2.png",
+                        emploi: "https://i.ibb.co/2NfmxDb/dev1-2.png",
                         nom: "dev2"
                     },
                     { 
-                        emploi: "img/dev1 3.png",
+                        emploi: "https://i.ibb.co/87Kxwm1/dev1-3.pngg",
                         nom: "dev3"
                     }
                 ]
@@ -28,15 +28,15 @@ const centres = [
                 nom: "devwfs",
                 groups: [
                     { 
-                        emploi: "img/dev2 1.png",
+                        emploi: "https://i.ibb.co/d58X5GX/dev2-1.png",
                         nom: "devwfs1"
                     },
                     { 
-                        emploi: "img/dev2 2.png",
+                        emploi: "https://i.ibb.co/qDFPMHH/dev2-2.png",
                         nom: "devwfs2"
                     },
                     { 
-                        emploi: "img/dev2 3.png",
+                        emploi: "https://i.ibb.co/McwH2Jf/dev2-3.png",
                         nom: "devwfs3"
                     }
                 ]
