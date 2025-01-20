@@ -338,7 +338,7 @@ setL2(l.filter(e=>{
  
   setTitre(v.target.value)
   setL2(l.filter(e=>{
-    return e.titre.includes(titre)
+    return  e.titre.toLowerCase().includes(titre.toLowerCase())
   }))
  }
   return (
