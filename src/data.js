@@ -5,7 +5,7 @@ const centres = [
         type: "scolaire",
         ville: "fes",
         cartier: "adarissa",contact:"0677072608",localisation:"https://maps.app.goo.gl/gHMknvNfJHXoDjJCA",
-        professeur:["soufiane","sayf"],
+        professeur:["boufounas l7san","idrisii asmae","youala asmae","zahar mouna","souad abou el hamama","bakkali hasan"],
         niveaux: [
             { id:1,
                 nom: "dev",
@@ -41,6 +41,30 @@ const centres = [
                     }
                 ]
             }
+        ]
+    },
+
+    {image:"https://i.ibb.co/25F0BP5/logo.png",description:"معهد البيت الألماني لتعليم اللغات و الدعم المدرسي و الجامعي Das Deutsche Hause Institute Fes",
+        id: 2,
+        titre: "Das Deutsche Hause Institute Fes",
+        type: "langues",
+        ville: "fes",
+        cartier: "wed fes",contact:"0766548709",localisation:"https://maps.app.goo.gl/3moCKxmTF388Qy5m6",
+        professeur:["mohamedd sabiri","sayfdine nabet"],
+        niveaux: [
+            { id:1,
+                nom: "allemand",
+                groups: [
+                    { 
+                        emploi: "https://i.ibb.co/j4PCHyk/Capture111.png",
+                        nom: "groupe 1"
+                    },{ 
+                        emploi: "https://i.ibb.co/yXcPKK7/112.png",
+                        nom: "groupe 2"
+                    }
+                ]
+            },
+            
         ]
     }
 ];
