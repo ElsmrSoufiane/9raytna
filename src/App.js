@@ -356,7 +356,7 @@ setL2(l.filter(e=>{
       <ChercheP l={l} setL2={setL2} initial={initial} /> 
       <Rech change={Change} initial={initial} />
       <Filter initial={initial} handleV={handleV} handleC={handleC}  ville={ville} />
-     <div style={{display:'flex',justifyContent:"space-evenly",width:"100%"}}>
+     <div style={{display:'flex',justifyContent:"space-evenly",width:"100%",alignItems:"first",gap:"10px"}}>
 
       {
          l2.map((e,i)=>{
