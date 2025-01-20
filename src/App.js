@@ -336,9 +336,10 @@ setL2(l.filter(e=>{
   },[mode])
  function Change(v){
  
-  setTitre(v.target.value)
+  setTitre(v.target.value.toLowerCase())
+  
   setL2(l.filter(e=>{
-    return  e.titre.toLowerCase().includes(titre.toLowerCase())
+    return  e.titre.includes(titre);
   }))
  }
   return (

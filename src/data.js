@@ -44,9 +44,9 @@ const centres = [
         ]
     },
 
-    {image:"https://i.ibb.co/25F0BP5/logo.png",description:"معهد البيت الألماني لتعليم اللغات و الدعم المدرسي و الجامعي Das Deutsche Hause Institute Fes",
+    {image:"https://i.ibb.co/25F0BP5/logo.png",description:"معهد البيت الألماني لتعليم اللغات و الدعم المدرسي و الجامعي das deutsche hause institute fes",
         id: 2,
-        titre: "Das Deutsche Hause Institute Fes",
+        titre: "das deutsche hause institute fes",
         type: "langues",
         ville: "fes",
         cartier: "wed fes",contact:"0766548709",localisation:"https://maps.app.goo.gl/3moCKxmTF388Qy5m6",
