@@ -301,20 +301,15 @@ const App = () => {
     }
     setL2(l)
   }
-  function handleC(ep){
-  
+  function handleC(ep) {
     setCartier(ep);
-    setL2(l.filter(e=>{
-      return e.cartier==cartier
-    }))
+    setL2(l.filter(e => e.cartier === ep));
   }
-  function handleV(ep){
-    
-setVille(ep);
-setL2(l.filter(e=>{
-  return e.ville==ville
-}))
+  function handleV(ep) {
+    setVille(ep);
+    setL2(l.filter(e => e.ville === ep));
   }
+  
   function voire(idd){
     setId(idd)
   }
@@ -334,14 +329,12 @@ setL2(l.filter(e=>{
   useEffect(()=>{
     setId()
   },[mode])
- function Change(v){
- 
-  setTitre(v.target.value.toLowerCase())
+  function Change(v) {
+    const titreRecherche = v.target.value.toLowerCase();
+    setTitre(titreRecherche);
+    setL2(l.filter(e => e.titre.toLowerCase().includes(titreRecherche)));
+  }
   
-  setL2(l.filter(e=>{
-    return  e.titre.includes(titre);
-  }))
- }
   return (
    
     <div className="container-xxl bg-white p-0">
